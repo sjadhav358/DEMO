@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>question</title>
+</head>
+<body>
+	
+	<form  name="forms" id="">
+
+	
+		<label>	   1)  Find the greatest number that will divide 43, 91 and 183 so as to leave the same remainder in each case.  </label></label>
+		<br>
+     <input type="checkbox" name="question1" value="4">4<br>
+     <input type="checkbox" name="question1" value="9">9<br>
+     <input type="" name="question1" value="7">7<br>
+	<br>
+		<br>
+		<label>2) what is your father name</label>
+		<br>
+		
+		
+		
+		<input type="radio" name="question2" value="vidhyadhar">vidhyadhar<br>
+		
+		<input type="radio" name="question2" value="jadhav">jadhav<br>
+		<br>
+		
+		<label>3)what your brother name</label>
+		<br>
+		<input type="radio" name="question3" value="mahesh">mahesh<br>
+		
+		<input type="radio" name="question3" value="mangesh">mangesh<br>
+		<br>
+		<input type="button" value="submit" onclick="fun();">
+	</form>
+	<div class="meassage">
+		<p id="n"></p>
+	</div>
+	<hr>
+	<script>
+		function fun()
+		{
+	 var a = document.forms.question1.value;
+	 var b =document.forms.question2.value;
+	  var c =document.forms.question3.value;		
+	 
+			var correct=0;
+			
+			 if(a==4)
+				 {
+					 correct++;
+				 }
+			
+			if(b=="vidhyadhar")
+				{
+					correct++;
+				}
+			
+		document.getElementById("n").innerHTML= a;
+		}
+	</script>
+</body>
+</html>
